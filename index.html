@@ -45,7 +45,7 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header class="md:container md:mx-auto">
+    <header class="pb-20 md:container md:mx-auto">
       <!-- Navbar -->
       <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -210,5 +210,79 @@
         </a>
       </div>
     </header>
+    <main class="bg-[#F4F4F4]">
+      <!-- Catagory -->
+      <section class="py-20 container mx-auto">
+        <!-- Icon Image -->
+        <div class="hidden md:block -ml-10 mb-4">
+          <img src="assets/icon-image.png" alt="" />
+        </div>
+        <!-- Cotagory Container -->
+        <div class="flex flex-col md:flex-row gap-6 md:gap-9">
+          <!-- Catagrory Content -->
+          <div class="md:w-1/2">
+            <div class="text-center md:text-start">
+              <button
+                class="btn font-bold rounded-full bg-white border-1 hover:bg-white font-medium text-base text-article-color mx-auto"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 mr-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+                About Us
+              </button>
+            </div>
+            <h2 class="mt-6 text-title-color text-3xl md:text-2xl font-extrabold">
+              We design thoughtful, liveable spaces
+            </h2>
+            <p class="my-6 text-article-color text-base font-medium leading-6">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <!-- Item Container -->
+            <div>
+              <!-- Items -->
+              <div class="flex items-center gap-3 md:gap-4 bg-white rounded-xl p-3 md:p-6 shadow-md">
+                <img src="assets/commercial.png" alt="" />
+                <!-- Items Content -->
+                <div class="">
+                  <h4 class="font-extrabold text-title-color text-xl mb-3">Commercial</h4>
+                  <p class="text-article-color font-medium text-base leading-6">
+                    The barn house captivates with its blend  of rustic charm and
+                    modern
+                </div>.
+                </p>
+              </div>
+              <div class="mt-6 flex items-center gap-3 md:gap-4 bg-white rounded-xl p-3 md:p-6 shadow-md">
+                <img src="assets/residential.png" alt="" />
+                <!-- Items Content -->
+                <div class="">
+                  <h4 class="font-extrabold text-title-color text-xl">Desidential</h4>
+                  <p class="text-article-color font-medium text-base leading-6">
+                    The barn house captivates with its blend  of rustic charm and
+                    modern
+                </div>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Catagory Img -->
+          <div class="md:w-1/2">
+            <img src="assets/catagory-image.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
