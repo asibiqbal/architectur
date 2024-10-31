@@ -11,11 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/e245dc21e1.js"
-      crossorigin="anonymous"
-    ></script>
     <!-- Daisy UI CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
@@ -31,9 +26,12 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              "bg-primary": "#ABEF5F",
+              "primary-color": "#ABEF5F",
               "active-hover": "#494949;",
+              "article-color": "#494949;",
               "gray-color": "#737373;",
+              "title-color": "#212121;",
+              "light-bg": "rgba(171, 239, 95, 0.50);",
             },
           },
         },
@@ -59,7 +57,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-8 p-2 bg-bg-primary content-center rounded-full text-xs"
+              class="size-8 p-2 bg-primary-color content-center rounded-full text-xs"
             >
               <path
                 stroke-linecap="round"
@@ -71,6 +69,7 @@
             Rinterio
           </a>
         </div>
+        <!-- Menu -->
         <div class="navbar-center hidden md:hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li>
@@ -98,7 +97,6 @@
             </li>
           </ul>
         </div>
-
         <div class="navbar-end">
           <!-- Nav Icons -->
           <div class="hidden md:flex mr-4 gap-2">
@@ -137,7 +135,7 @@
           </div>
           <!-- Navbar Btn -->
           <a
-            class="hidden md:flex btn rounded-full bg-bg-primary font-extrabold text-base"
+            class="hidden md:flex btn rounded-full bg-primary-color font-extrabold text-base"
             >Book Consult
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -174,6 +172,42 @@
             </button>
           </div>
         </div>
+      </div>
+      <!-- Banner -->
+      <div class="text-center pt-8">
+        <img class="mx-auto" src="assets/banner.png" alt="" />
+        <h1
+          class="lg:w-2/3 mx-auto text-title-color text-4xl md:text-5xl font-extrabold leading-tight my-6"
+        >
+          A barn house of this design has a striking appearance
+        </h1>
+        <p
+          class="lg:w-9/12 mx-auto text-base font-medium leading-6 text-article-color mb-8"
+        >
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+
+        <!-- Banner Btn -->
+        <a class="btn rounded-full bg-light-bg font-extrabold text-base"
+          >View Details
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-8 p-2 bg-primary-color content-center rounded-full text-xs"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </a>
       </div>
     </header>
   </body>
